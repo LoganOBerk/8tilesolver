@@ -18,11 +18,25 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main\Main.cpp" />
+    <ClCompile Include="model\Agent.cpp" />
+    <ClCompile Include="model\AStarAgent.cpp" />
+    <ClCompile Include="model\State.cpp" />
+    <ClCompile Include="ui\UI.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="model\Agent.h" />
+    <ClInclude Include="model\AStarAgent.h" />
+    <ClInclude Include="model\State.h" />
+    <ClInclude Include="ui\UI.h" />
+    <ClInclude Include="utils\Globals.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{2a775cc6-af8a-4112-83b8-e052bb38cfc8}</ProjectGuid>
-    <RootNamespace>TaskManagerAppTests</RootNamespace>
+    <ProjectGuid>{599bcc12-a4fe-4057-8bdf-575cdd6e3602}</ProjectGuid>
+    <RootNamespace>My8tilesolver</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -105,6 +119,9 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)model;
+$(ProjectDir)utils
+;$(ProjectDir)ui;$(ProjectDir)main</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -126,17 +143,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="test.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\TaskManagerApp\TaskManagerApp.vcxproj">
-      <Project>{53faee63-caa6-4404-b91c-93ab03e862fe}</Project>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

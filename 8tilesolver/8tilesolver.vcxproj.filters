@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="main">
+      <UniqueIdentifier>{a3581de1-6289-467c-b2cb-b64edfd59203}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="model">
+      <UniqueIdentifier>{606c4440-5041-4acb-ac94-35054d3d1b73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui">
+      <UniqueIdentifier>{c611d043-60d7-449a-b080-b6f12d9f0a6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utils">
+      <UniqueIdentifier>{5c9caff5-d5ea-4da2-bb4d-b37b9d5be4bb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ui\UI.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="model\Agent.cpp">
+      <Filter>model</Filter>
+    </ClCompile>
+    <ClCompile Include="model\AStarAgent.cpp">
+      <Filter>model</Filter>
+    </ClCompile>
+    <ClCompile Include="main\Main.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="model\State.cpp">
+      <Filter>model</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="utils\Globals.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\UI.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="model\Agent.h">
+      <Filter>model</Filter>
+    </ClInclude>
+    <ClInclude Include="model\AStarAgent.h">
+      <Filter>model</Filter>
+    </ClInclude>
+    <ClInclude Include="model\State.h">
+      <Filter>model</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
