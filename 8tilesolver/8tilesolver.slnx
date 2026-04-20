@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="8tilesolver.vcxproj" />
+  <Project Path="8tilesolver.vcxproj" Id="599bcc12-a4fe-4057-8bdf-575cdd6e3602" />
 </Solution>
